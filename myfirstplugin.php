@@ -7,6 +7,7 @@ add_action('wp_enqueue_scripts', 'callback_for_setting_up_scripts', 99);
 function callback_for_setting_up_scripts() {
     wp_register_style( 'myfirstpluginmain', plugins_url('main.css' , __FILE__) );
     wp_enqueue_style('myfirstpluginmain');
+    wp_enqueue_script('myfirstpluginmain' , plugins_url('main.js' , __FILE__) , array('jquery'), null, true );
 }
 // [my_shortcode]
 function my_shortcode_func($atts) {
