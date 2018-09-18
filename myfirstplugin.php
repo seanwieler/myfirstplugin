@@ -2,8 +2,12 @@
 /*
 Plugin Name: My First Plugin
 */
-wp_register_style( 'myfirstpluginmain', plugins_url('main.css' , __FILE__) );
-wp_enqueue_style('myfirstpluginmain');
+
+add_action('wp_enqueue_scripts', 'callback_for_setting_up_scripts');
+function callback_for_setting_up_scripts() {
+    wp_register_style( 'myfirstpluginmain', plugins_url('main.css' , __FILE__) );
+    wp_enqueue_style('myfirstpluginmain');
+}
 // [my_shortcode]
 function my_shortcode_func($atts) {
     $number = mt_rand(1 , 5);
