@@ -6,4 +6,4 @@ Plugin Name: My First Plugin
 function my_shortcode_func($atts) {
     return "whatever text works";
 }
-add_shortcode ('myshortcode','my_shortcode_func');
+add_shortcode ('my_shortcode','my_shortcode_func');
