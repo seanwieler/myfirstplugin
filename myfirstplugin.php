@@ -11,6 +11,7 @@ function my_shortcode_func($atts) {
         <li><a href="#thechilcotin">The Chilcotin</a></li>
         <li><a href="#thecoast">The Coast</a></li>
     </ul>
+    <img src="<?php echo plugins_url('img/tree.jpg' , __FILE__); ?>" alt="tree">
     <?php
     $output = ob_get_clean();
     return $output;
