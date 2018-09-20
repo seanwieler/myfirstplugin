@@ -36,3 +36,4 @@ function random_image_func($atts) {
     $output = ob_get_clean();
     return $output;
 add_shortcode ('random_image' , 'random_image_func');
+?>
