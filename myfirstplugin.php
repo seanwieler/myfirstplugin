@@ -13,12 +13,24 @@ function callback_for_setting_up_scripts() {
 function random_image_func($atts) {
     $number = mt_rand(1 , 5);
     ob_start();
+    if($number == 1){
     ?>
-    <ul>
-        <li><a href="#thecariboo">The Cariboo</a></li>
-        <li><a href="#thechilcotin">The Chilcotin</a></li>
-        <li><a href="#thecoast">The Coast</a></li>
-    </ul>
+	<img src="<?php echo plugins_url('img/tree.jpg' , __FILE__); ?>" alt="tree">
+    <?php
+    } elseif ($number == 2) {
+    ?>
+    <img src="<?php echo plugins_url('img/nature-wallpaper.jpeg' , __FILE__); ?>" alt="nature1">
+	<?php
+	} elseif($number == 3) {
+    ?>
+	<img src="<?php echo plugins_url('img/naturewallpaper.jpg' , __FILE__); ?>" alt="nature2">
+    <?php
+    } elseif($number == 4) {
+    ?>
+    <img src="<?php echo plugins_url('img/wallpapers24.jpg' , __FILE__); ?>" alt="nature3">
+    <?php
+    } else {
+    ?>
     <img src="<?php echo plugins_url('img/tree.jpg' , __FILE__); ?>" alt="tree">
     <?php
     $output = ob_get_clean();
