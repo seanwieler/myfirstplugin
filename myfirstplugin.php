@@ -12,7 +12,8 @@ function callback_for_setting_up_scripts() {
 }
 // [random_image]
 function random_image_func($atts) {
-    $number = mt_rand(1 , 5);
+    $number = 2; 
+    // = mt_rand(1 , 5);
     ob_start();
     if($number == 1){
     ?>
