@@ -16,23 +16,23 @@ function random_image_func($atts) {
     ob_start();
     if($number == 1){
     ?>
-	<img src="<?php echo plugins_url('img/imge1.jpg' , __FILE__); ?>" class="resize" alt="image1">
+	<img src="<?php echo plugins_url('img/image1.jpg' , __FILE__); ?>" class="resize" alt="image1">
     <?php
     } elseif ($number == 2) {
     ?>
-    <img src="<?php echo plugins_url('img/imge2.jpeg' , __FILE__); ?>" class="resize" alt="image2">
+    <img src="<?php echo plugins_url('img/image2.jpeg' , __FILE__); ?>" class="resize" alt="image2">
 	<?php
 	} elseif($number == 3) {
     ?>
-	<img src="<?php echo plugins_url('img/iage3.jpg' , __FILE__); ?>" class="resize" alt="image3">
+	<img src="<?php echo plugins_url('img/image3.jpg' , __FILE__); ?>" class="resize" alt="image3">
     <?php
     } elseif($number == 4) {
     ?>
-    <img src="<?php echo plugins_url('img/imge4.jpg' , __FILE__); ?>" class="resize" alt="image4">
+    <img src="<?php echo plugins_url('img/image4.jpg' , __FILE__); ?>" class="resize" alt="image4">
     <?php
     } else {
     ?>
-    <img src="<?php echo plugins_url('img/imae5.jpg' , __FILE__); ?>" class="resize" alt="image5">
+    <img src="<?php echo plugins_url('img/image5.jpg' , __FILE__); ?>" class="resize" alt="image5">
     <?php }
     $output = ob_get_clean();
     return $output;
