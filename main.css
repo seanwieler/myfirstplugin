@@ -1,8 +1,9 @@
 a {
     color: #ff0000;
 }
-img.resize {
+.resize {
     border: 3px solid #000000;
+    border-radius: 50%;
     width: 150px;
     height: auto;
 }
