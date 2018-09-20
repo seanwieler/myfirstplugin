@@ -22,6 +22,7 @@ function random_image_func($atts) {
     } elseif ($number == 2) {
     ?>
     <img src="<?php echo plugins_url('img/nature-wallpaper.jpeg' , __FILE__); ?>" alt="nature1">
+    <p>$number</p>
 	<?php
 	} elseif($number == 3) {
     ?>
