@@ -1,3 +1,8 @@
 a {
     color: #ff0000;
 }
+resize {
+	border-style: none;
+	max-width: 600px;
+	height: auto;
+}
