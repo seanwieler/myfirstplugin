@@ -1,8 +1,7 @@
 a {
     color: #ff0000;
 }
-.resize {
-	border-style: none;
-    height: 100px;
-    width: auto;
+.border {
+        border-radius: 50%;
+    }
 }
