@@ -1,6 +1,7 @@
 <?php
 /*
 Plugin Name: Shortcode Quiz Plugin
+Description: This plugin generates a random number and uses it to output a random photo
 Author: Sean Wieler
 */
 
@@ -36,6 +37,5 @@ function random_image_func($atts) {
     <?php }
     $output = ob_get_clean();
     return $output;
-    return $number;
     }
 add_shortcode ('random_image' , 'random_image_func');
