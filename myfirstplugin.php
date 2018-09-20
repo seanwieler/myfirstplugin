@@ -16,7 +16,7 @@ function random_image_func($atts) {
     ob_start();
     if($number == 1){
     ?>
-	<img src="<?php echo plugins_url('img/image1.jpg' , __FILE__); ?>" alt="image1">
+	<img class="resize" src="<?php echo plugins_url('img/image1.jpg' , __FILE__); ?>" alt="image1">
     <?php
     } elseif ($number == 2) {
     ?>
