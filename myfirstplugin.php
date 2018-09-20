@@ -35,8 +35,8 @@ function random_image_func($atts) {
     ?>
     <img src="<?php echo plugins_url('img/tree.jpg' , __FILE__); ?>" alt="tree">
     <?php }
-}
     $output = ob_get_clean();
     return $output;
     return $number;
+    }
 add_shortcode ('random_image' , 'random_image_func');
