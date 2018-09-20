@@ -20,19 +20,19 @@ function random_image_func($atts) {
     <?php
     } elseif ($number == 2) {
     ?>
-    <img src="<?php echo plugins_url('img/image2.jpeg' , __FILE__); ?>" alt="image2">
+    <img class="resize" src="<?php echo plugins_url('img/image2.jpeg' , __FILE__); ?>" alt="image2">
 	<?php
 	} elseif($number == 3) {
     ?>
-	<img src="<?php echo plugins_url('img/image3.jpg' , __FILE__); ?>" alt="image3">
+	<img class="resize" src="<?php echo plugins_url('img/image3.jpg' , __FILE__); ?>" alt="image3">
     <?php
     } elseif($number == 4) {
     ?>
-    <img src="<?php echo plugins_url('img/image4.jpg' , __FILE__); ?>" alt="image4">
+    <img class="resize" src="<?php echo plugins_url('img/image4.jpg' , __FILE__); ?>" alt="image4">
     <?php
     } else {
     ?>
-    <img src="<?php echo plugins_url('img/image5.jpg' , __FILE__); ?>" alt="image5">
+    <img class="resize" src="<?php echo plugins_url('img/image5.jpg' , __FILE__); ?>" alt="image5">
     <?php }
     $output = ob_get_clean();
     return $output;
