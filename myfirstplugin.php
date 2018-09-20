@@ -1,6 +1,6 @@
 <?php
 /*
-Plugin Name: My First Plugin
+Plugin Name: Shortcode Quiz Plugin
 */
 
 add_action('wp_enqueue_scripts', 'callback_for_setting_up_scripts', 99);
@@ -9,8 +9,8 @@ function callback_for_setting_up_scripts() {
     wp_enqueue_style('myfirstpluginmain');
     wp_enqueue_script('myfirstpluginmain' , plugins_url('main.js' , __FILE__) , array('jquery'), null, true );
 }
-// [my_shortcode]
-function my_shortcode_func($atts) {
+// [random_image]
+function random_image_func($atts) {
     $number = mt_rand(1 , 5);
     ob_start();
     ?>
@@ -24,4 +24,4 @@ function my_shortcode_func($atts) {
     $output = ob_get_clean();
     return $output;
 }
-add_shortcode ('my_shortcode','my_shortcode_func');
+add_shortcode ('random_image','random_image_func');
