@@ -10,7 +10,7 @@ function callback_for_setting_up_scripts() {
     wp_enqueue_style('shortcodequizpluginmain');
     wp_enqueue_script('shortcodequizpluginmain' , plugins_url('main.js' , __FILE__) , array('jquery'), null, true );
 }
-// [random_image]
+//[random_image]
 function random_image_func($atts) {
     $number = 2; 
     // = mt_rand(1 , 5);
