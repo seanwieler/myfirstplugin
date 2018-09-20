@@ -12,29 +12,27 @@ function callback_for_setting_up_scripts() {
 }
 //[random_image]
 function random_image_func($atts) {
-    $number = 2; 
-    // = mt_rand(1 , 5);
+    $number = mt_rand(1 , 5);
     ob_start();
     if($number == 1){
     ?>
-	<img src="<?php echo plugins_url('img/tree.jpg' , __FILE__); ?>" alt="tree">
+	<img src="<?php echo plugins_url('img/image1.jpg' , __FILE__); ?>" alt="image1">
     <?php
     } elseif ($number == 2) {
     ?>
-    <img src="<?php echo plugins_url('img/nature-wallpaper.jpeg' , __FILE__); ?>" alt="nature1">
-    <p>$number</p>
+    <img src="<?php echo plugins_url('img/image2.jpeg' , __FILE__); ?>" alt="image2">
 	<?php
 	} elseif($number == 3) {
     ?>
-	<img src="<?php echo plugins_url('img/naturewallpaper.jpg' , __FILE__); ?>" alt="nature2">
+	<img src="<?php echo plugins_url('img/image3.jpg' , __FILE__); ?>" alt="image3">
     <?php
     } elseif($number == 4) {
     ?>
-    <img src="<?php echo plugins_url('img/wallpapers24.jpg' , __FILE__); ?>" alt="nature3">
+    <img src="<?php echo plugins_url('img/iamge4.jpg' , __FILE__); ?>" alt="image4">
     <?php
     } else {
     ?>
-    <img src="<?php echo plugins_url('img/tree.jpg' , __FILE__); ?>" alt="tree">
+    <img src="<?php echo plugins_url('img/image5.jpg' , __FILE__); ?>" alt="image5">
     <?php }
     $output = ob_get_clean();
     return $output;
