@@ -3,6 +3,6 @@ a {
 }
 .resize {
 	border-style: none;
-	width: 600px;
-	height: auto;
+	width: auto;
+	height: 200px;
 }
