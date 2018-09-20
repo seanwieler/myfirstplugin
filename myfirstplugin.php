@@ -7,9 +7,9 @@ Author: Sean Wieler
 
 add_action('wp_enqueue_scripts', 'callback_for_setting_up_scripts', 99);
 function callback_for_setting_up_scripts() {
-    wp_register_style('myfirstpluginmain', plugins_url('main.css' , __FILE__) );
-    wp_enqueue_style('myfirstpluginmain');
-    wp_enqueue_script('myfirstpluginmain' , plugins_url('main.js' , __FILE__) , array('jquery'), null, true );
+    wp_register_style('shrtcdepluginmain', plugins_url('main.css' , __FILE__) );
+    wp_enqueue_style('shrtcdepluginmain');
+    wp_enqueue_script('shrtcdepluginmain' , plugins_url('main.js' , __FILE__) , array('jquery'), null, true );
 }
 //[random_image]
 function random_image_func($atts) {
