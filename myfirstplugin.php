@@ -28,7 +28,7 @@ function random_image_func($atts) {
     <?php
     } elseif($number == 4) {
     ?>
-    <img src="<?php echo plugins_url('img/iamge4.jpg' , __FILE__); ?>" alt="image4">
+    <img src="<?php echo plugins_url('img/image4.jpg' , __FILE__); ?>" alt="image4">
     <?php
     } else {
     ?>
