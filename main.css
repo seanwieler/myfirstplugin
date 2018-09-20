@@ -4,5 +4,6 @@ a {
 .resize {
     border: 3px solid #000000;
     /*border-radius: 80%;*/
-    width: 600px;
+    width: 800px;
+    height: auto;
 }
