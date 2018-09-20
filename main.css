@@ -2,6 +2,6 @@ a {
     color: #ff0000;
 }
 .resize {
-	border-style: none;
     width: 150px;
+    height: auto;
 }
