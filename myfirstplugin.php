@@ -21,6 +21,11 @@ function my_footer_meddler() {
 src="https://www.google.com/maps/embed/v1/view?zoom=13&center=48.4284%2C-123.3656&key=<?php echo $maps_key; ?>" allowfullscreen></iframe>
 <?php
 }
+add_filter("the_content", "adding_text");
+function adding_text($content) {
+    str_replace(' ', '&nbsp;&nbsp;' , $content);
+    return $content;
+}
 //[random_image]
 function random_image_func($atts) {
     $number = mt_rand(1 , 5);
