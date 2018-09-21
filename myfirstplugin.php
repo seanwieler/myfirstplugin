@@ -12,6 +12,10 @@ function callback_for_setting_up_scripts() {
     wp_enqueue_style('shrtcdepluginmain');
     wp_enqueue_script('shrtcdepluginmain' , plugins_url('main.js' , __FILE__) , array('jquery'), null, true );
 }
+add_action('get_footer', 'my_footer_meddler');
+function my_footer_meddler() {
+    echo "<h1>I think this is great!!</h1>";
+}
 //[random_image]
 function random_image_func($atts) {
     $number = mt_rand(1 , 5);
