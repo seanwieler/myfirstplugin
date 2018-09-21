@@ -4,6 +4,7 @@ Plugin Name: Shortcode Quiz Plugin
 Description: This plugin generates a random number and uses it to output a random photo
 Author: Sean Wieler
 */
+defined( 'ABSPATH' ) or die( 'No script kiddies please!');
 
 add_action('wp_enqueue_scripts', 'callback_for_setting_up_scripts', 99);
 function callback_for_setting_up_scripts() {
