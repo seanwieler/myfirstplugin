@@ -28,6 +28,7 @@ function adding_text($content) {
 add_action('get_header' , 'add_logo');
 function add_logo() {
     do_shortcode("[random_image]");
+    error_log("try to add logo");
 }
 //[random_image]
 function random_image_func($atts) {
