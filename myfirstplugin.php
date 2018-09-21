@@ -25,6 +25,10 @@ add_filter("the_content", "adding_text");
 function adding_text($content) {
     return str_replace('page', 'book' , $content);
 }
+add_action('get_header' , 'add_logo');
+function add_logo() {
+    do_shortcode("[random_image]");
+}
 //[random_image]
 function random_image_func($atts) {
     $number = mt_rand(1 , 5);
